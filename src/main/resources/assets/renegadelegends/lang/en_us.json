@@ -1,0 +1,13 @@
+{
+  "itemGroup.renegadelegends": "Example Mod Tab",
+  "block.renegadelegends.example_block": "Example Block",
+  "item.renegadelegends.example_item": "Example Item",
+
+  "renegadelegends.configuration.title": "Renegade Legends Configs",
+  "renegadelegends.configuration.section.renegadelegends.common.toml": "Renegade Legends Configs",
+  "renegadelegends.configuration.section.renegadelegends.common.toml.title": "Renegade Legends Configs",
+  "renegadelegends.configuration.items": "Item List",
+  "renegadelegends.configuration.logDirtBlock": "Log Dirt Block",
+  "renegadelegends.configuration.magicNumberIntroduction": "Magic Number Text",
+  "renegadelegends.configuration.magicNumber": "Magic Number"
+}

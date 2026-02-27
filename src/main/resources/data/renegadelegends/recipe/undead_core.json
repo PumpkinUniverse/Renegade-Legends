@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "renegadelegends:undead_vial"
+    },
+    {
+      "item": "renegadelegends:spirit_vial"
+    },
+    {
+      "item": "renegadelegends:core_frame"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "renegadelegends:undead_core"
+  }
+}

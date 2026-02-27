@@ -1,8 +1,12 @@
 {
   "item.renegadelegends.undead_core": "Undead Core",
   "item.renegadelegends.undead_vial": "Undead Vial",
+  "item.renegadelegends.spirit_vial": "Spirit Vial",
+  "item.renegadelegends.core_frame": "Core Frame",
 
   "block.renegadelegends.dungeon_bricks": "Dungeon Bricks",
   "block.renegadelegends.cracked_dungeon_bricks": "Cracked Dungeon Bricks",
-  "block.renegadelegends.dreadshale": "Dreadshale"
+  "block.renegadelegends.dreadshale": "Dreadshale",
+
+  "creativetab.renegadelegends.renegade_legends" : "Renegade Legends"
 }

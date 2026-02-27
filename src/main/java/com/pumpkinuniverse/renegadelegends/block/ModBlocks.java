@@ -11,15 +11,24 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.function.Supplier;
-
-import static net.minecraft.world.item.Items.registerBlock;
 
 public class ModBlocks {
 
     //DO FIRST
     public static final DeferredRegister.Blocks BLOCKS =
             DeferredRegister.createBlocks(RenegadeLegends.MOD_ID);
+
+    public static final List<DeferredBlock<? extends Block>> BLOCK_LIST = new ArrayList<>();
+    //REGISTER BLOCK AS BLOCK
+    private static <T extends Block> DeferredBlock<T> registerBlock (String name, Supplier<T> supplier) {
+        DeferredBlock<T> block = BLOCKS.register(name, supplier);
+        registerBlockItem(name,block);
+        BLOCK_LIST.add(block);
+        return block;
+    }
 
     //ADD BLOCKS
     public static final DeferredBlock<Block> DUNGEON_BRICKS = registerBlock("dungeon_bricks",
@@ -31,13 +40,6 @@ public class ModBlocks {
     public static final DeferredBlock<Block> DREADSHALE = registerBlock("dreadshale",
             () -> new Block(BlockBehaviour.Properties.of()
                     .sound(SoundType.DEEPSLATE)));
-
-    //REGISTER BLOCK AS BLOCK
-    private static <T extends Block> DeferredBlock<T> registerBlock (String name, Supplier<T> block) {
-        DeferredBlock<T> toReturn = BLOCKS.register(name, block);
-        registerBlockItem(name,toReturn);
-        return toReturn;
-    }
 
     //REGISTER BLOCKS AS ITEMS
     private static <T extends Block> void registerBlockItem(String name, DeferredBlock<T> block) {

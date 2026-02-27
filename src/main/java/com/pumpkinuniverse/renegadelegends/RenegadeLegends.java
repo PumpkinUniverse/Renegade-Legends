@@ -1,6 +1,7 @@
 package com.pumpkinuniverse.renegadelegends;
 
 import com.pumpkinuniverse.renegadelegends.block.ModBlocks;
+import com.pumpkinuniverse.renegadelegends.item.ModCreativeModeTabs;
 import com.pumpkinuniverse.renegadelegends.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
@@ -27,36 +28,23 @@ public class RenegadeLegends {
     // The constructor for the mod class is the first code that is run when your mod is loaded.
     // FML will recognize some parameter types like IEventBus or ModContainer and pass them in automatically.
     public RenegadeLegends(IEventBus modEventBus, ModContainer modContainer) {
-        // Register the commonSetup method for modloading
+        // Register the commonSetup method for mod loading
         modEventBus.addListener(this::commonSetup);
         // Register ourselves for server and other game events we are interested in.
         // Note that this is necessary if and only if we want *this* class (RenegadeLegends) to respond directly to events.
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
-        ModItems.register(modEventBus);
-        ModBlocks.register(modEventBus);
+        //Register Creative Mode Tab
+        ModCreativeModeTabs.register(modEventBus);
 
-        // Register the item to a creative tab
-        modEventBus.addListener(this::addCreative);
+        //Register Mod Items
+        ModItems.register(modEventBus);
+        //Register Mod Blocks
+        ModBlocks.register(modEventBus);
     }
 
     private void commonSetup(FMLCommonSetupEvent event) {
-    }
-
-    private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS)
-        {
-            //Add Items to Creative Tab
-            event.accept(ModItems.UNDEAD_CORE);
-            event.accept(ModItems.UNDEAD_VIAL);
-        }
-        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS)
-        {
-            event.accept(ModBlocks.DUNGEON_BRICKS);
-            event.accept(ModBlocks.CRACKED_DUNGEON_BRICKS);
-            event.accept(ModBlocks.DREADSHALE);
-        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

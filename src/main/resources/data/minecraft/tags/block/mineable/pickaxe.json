@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "renegadelegends:dreadshale",
+    "renegadelegends:nexus_stone_ore",
+    "renegadelegends:nexus_deepslate_ore",
+    "renegadelegends:nexus_dreadshale_ore"
+  ]
+}

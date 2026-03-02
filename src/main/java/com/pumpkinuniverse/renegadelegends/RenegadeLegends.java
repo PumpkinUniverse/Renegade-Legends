@@ -3,7 +3,6 @@ package com.pumpkinuniverse.renegadelegends;
 import com.pumpkinuniverse.renegadelegends.block.ModBlocks;
 import com.pumpkinuniverse.renegadelegends.item.ModCreativeModeTabs;
 import com.pumpkinuniverse.renegadelegends.item.ModItems;
-import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -11,11 +10,9 @@ import com.mojang.logging.LogUtils;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.Mod;
-import net.neoforged.fml.config.ModConfig;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
-import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
@@ -33,24 +30,26 @@ public class RenegadeLegends {
         // Register ourselves for server and other game events we are interested in.
         // Note that this is necessary if and only if we want *this* class (RenegadeLegends) to respond directly to events.
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
-        NeoForge.EVENT_BUS.register(this);
-
-        //Register Creative Mode Tab
-        ModCreativeModeTabs.register(modEventBus);
+        //NeoForge.EVENT_BUS.register(this);
 
         //Register Mod Items
         ModItems.register(modEventBus);
         //Register Mod Blocks
         ModBlocks.register(modEventBus);
+        //Register Creative Mode Tab
+        ModCreativeModeTabs.register(modEventBus);
+
+        LOGGER.info("Larry Watches");
     }
 
     private void commonSetup(FMLCommonSetupEvent event) {
     }
 
+    /*
     // You can use SubscribeEvent and let the Event Bus discover methods to call
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) {
         // Do something when the server starts
-        LOGGER.info("HELLO from server starting");
     }
+    */
 }

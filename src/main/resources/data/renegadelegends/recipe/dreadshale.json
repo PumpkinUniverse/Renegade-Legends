@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AA",
+    "AA"
+  ],
+  "key": {
+    "A" : {"item":  "renegadelegends:dreadshale_shard"}
+  },
+  "result": {
+    "count": 1,
+    "id": "renegadelegends:dreadshale"
+  }
+}

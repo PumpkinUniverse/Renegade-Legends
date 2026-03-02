@@ -3,10 +3,20 @@
   "item.renegadelegends.undead_vial": "Undead Vial",
   "item.renegadelegends.spirit_vial": "Spirit Vial",
   "item.renegadelegends.core_frame": "Core Frame",
+  "item.renegadelegends.dreadshale_shard": "Dreadshale Shard",
+  "item.renegadelegends.rift_anchor": "Rift Anchor",
+  "item.renegadelegends.nexus_ore": "Nexus Ore",
+  "item.renegadelegends.nexus_ingot": "Nexus Ingot",
+  "item.renegadelegends.nexus_shard": "Nexus Shard",
 
   "block.renegadelegends.dungeon_bricks": "Dungeon Bricks",
   "block.renegadelegends.cracked_dungeon_bricks": "Cracked Dungeon Bricks",
   "block.renegadelegends.dreadshale": "Dreadshale",
+  "block.renegadelegends.nexus_dreadshale_ore": "Nexus Dreadshale Ore",
+  "block.renegadelegends.nexus_stone_ore": "Nexus Stone Ore",
+  "block.renegadelegends.nexus_deepslate_ore": "Nexus Deepslate Ore",
+  "block.renegadelegends.nexus_stone": "Nexus Stone",
+
 
   "creativetab.renegadelegends.renegade_legends" : "Renegade Legends"
 }

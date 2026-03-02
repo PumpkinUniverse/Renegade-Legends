@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "side": "renegadelegends:block/nexus_deepslate_ore",
+    "end": "renegadelegends:block/nexus_deepslate_ore_top"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ABB",
+    "BBB",
+    "BBB"
+  ],
+  "key": {
+    "A" : {"item":  "renegadelegends:nexus_ingot"},
+    "B" : {"item":  "minecraft:lava_bucket"}
+  },
+  "result": {
+    "count": 1,
+    "id": "renegadelegends:dreadshale"
+  }
+}

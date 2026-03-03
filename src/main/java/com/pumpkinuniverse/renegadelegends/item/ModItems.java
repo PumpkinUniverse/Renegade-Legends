@@ -51,6 +51,8 @@ public class ModItems {
             ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> NEXUS_SHARD = registerItem("nexus_shard",
             () -> new FuelItem(new Item.Properties(), 17500));
+    public static final DeferredItem<Item> NEXUS_SUGAR_CUBE = registerItem("nexus_sugar_cube",
+            () -> new Item(new Item.Properties()));
 
     //DO LAST
     public static void register(IEventBus eventBus) {

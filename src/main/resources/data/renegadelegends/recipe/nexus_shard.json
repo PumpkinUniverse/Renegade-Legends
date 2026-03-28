@@ -1,16 +1,18 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "misc",
   "pattern": [
-    "ABB",
-    "BBB",
-    "BBB"
+    "###",
+    "#r#",
+    "#L#"
   ],
   "key": {
-    "A" : {"item":  "renegadelegends:nexus_ingot"},
-    "B" : {"item":  "minecraft:lava_bucket"}
+    "#": {"item": "minecraft:coal"},
+    "r": {"item" :"renegadelegends:nexus_ingot"},
+    "L": {"item": "minecraft:lava_bucket"}
   },
   "result": {
-    "count": 1,
-    "id": "renegadelegends:dreadshale"
+    "id": "renegadelegends:nexus_shard",
+    "count": 7
   }
 }

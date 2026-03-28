@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "ingredient": {
+    "item" : "renegadelegends:nexus_ore"
+  },
+  "result": {
+    "id": "renegadelegends:nexus_ingot"
+  },
+  "experience": 7,
+  "cookingtime": 100
+}

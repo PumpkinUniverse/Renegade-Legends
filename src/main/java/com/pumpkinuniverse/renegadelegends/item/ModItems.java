@@ -52,7 +52,13 @@ public class ModItems {
     public static final DeferredItem<Item> NEXUS_SHARD = registerItem("nexus_shard",
             () -> new FuelItem(new Item.Properties(), 17500));
     public static final DeferredItem<Item> NEXUS_SUGAR_CUBE = registerItem("nexus_sugar_cube",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties()){
+                @Override
+                public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+                    tooltipComponents.add(Component.literal("§b§lHorses find this very tasty!!"));
+                    super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+                }
+            });
 
     //DO LAST
     public static void register(IEventBus eventBus) {
